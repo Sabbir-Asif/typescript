@@ -44,14 +44,25 @@
 // const x = "hello" as any as number;
 // console.log(x); // 0
 
-// Compiled with --strictNullChecks
-interface Entity {
-    name: string;
-}
-function validateEntity(e?: Entity) {
-    // Throw exception if e is null or invalid entity
-}
-function processEntity(e?: Entity) {
-    validateEntity(e);
-    let s = e!.name; // Assert that e is non-null and access name
-}
+// // Compiled with --strictNullChecks
+// interface Entity {
+//     name: string;
+// }
+// function validateEntity(e?: Entity) {
+//     // Throw exception if e is null or invalid entity
+// }
+// function processEntity(e?: Entity) {
+//     validateEntity(e);
+//     let s = e!.name; // Assert that e is non-null and access name
+// }
+
+
+// type Person = {
+//     name: 'Sabbir';
+//     age: number;
+// }
+
+// const employee : Person = {
+//     name: 'Asif',
+//     age: 25
+// }
