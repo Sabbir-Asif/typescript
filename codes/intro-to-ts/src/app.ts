@@ -66,3 +66,50 @@
 //     name: 'Asif',
 //     age: 25
 // }
+
+// type Person = {
+//     name: string;
+//     age: number;
+// }
+
+// interface Employee {
+//     employeeId: number;
+// }
+
+
+// // interface third extends Person, Employee {
+// //     department: string;
+
+// class myClass implements Person, Employee {
+//     name: string;
+//     age: number;
+//     employeeId: number;
+//     constructor(name: string, age: number, employeeId: number) {
+//         this.name = name;
+//         this.age = age;
+//         this.employeeId = employeeId;
+//     }
+// }
+
+// abstract class Person2 {
+//     name: string;
+//     age: number;
+//     constructor(name: string, age: number) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//     abstract getName(): string;
+// }
+
+// class Employee2 extends Person2 {
+//     employeeId: number;
+//     constructor(name: string, age: number, employeeId: number) {
+//         super(name, age);
+//         this.employeeId = employeeId;
+//     }
+//     getName(): string {
+//         return this.name;
+//     }
+// }
+
+
