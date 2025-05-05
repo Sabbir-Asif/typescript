@@ -113,3 +113,120 @@
 // }
 
 
+// class Base {
+//     public name = 'Base';
+// }
+
+// class Derived extends Base {
+//     constructor() {
+//         super();
+//         console.log(this.name); // Derived
+//     }
+
+//     getName() {
+//         return this.name; // Base
+//     }
+//     setName(name: string) {
+//         this.name = name; // Base
+//     }
+// }
+// const derived = new Derived(); // Base
+// derived.setName('Derived'); // Base
+// console.log(derived.getName()); // Base
+
+// console.log(Base.name); // Base
+
+
+// interface Person {
+//     readonly name: string;
+//     readonly age: number;
+// }
+
+// let person: Person = {
+//     name: 'Sabbir',
+//     age: 25
+// }
+
+// console.log(person.name); // Sabbir
+// console.log(person.age); // 25
+
+// person.name = 'Asif'; // Error: Cannot assign to 'name' because it is a read-only property.
+// person.age++; // Error: Cannot assign to 'age' because it is a read-only property.
+
+
+// class MathOperations {
+//     add(a: number, b: number): number;
+//     add(a: string, b: string): string;
+//     add(a: any, b: any): any {
+//       return a + b;
+//     }
+//   }
+
+//   const math = new MathOperations();
+//   console.log(math.add(5, 10)); // Output: 15 (number addition)
+//   console.log(math.add("Hello, ", "World!"));
+
+// class Greeter {
+//     readonly name: string = "world";
+
+//     constructor(otherName?: string) {
+//       if (otherName !== undefined) {
+//         this.name = otherName;
+//       }
+//     }
+
+//     greet() {
+//       return "Hello, " + this.name;
+//     }
+// }  
+
+// const g = new Greeter('Sabbir');
+
+// console.log(g.greet()); // Hello, Sabbir`
+
+// class Base {
+//     k = 4;
+// }
+
+// class Derived extends Base {
+//     m = 5;
+//     constructor() {
+//         this.m = 6;
+//         // super();
+//         // console.log(this.k);
+//     }
+// }
+
+
+// type Colors = 'red' | 'green' | 'blue';
+
+// type RGB = [red: number, green: number, blue: number];
+
+
+// const pallate = {
+//     red: [255, 0, 0],
+//     green: [0, 255, 0],
+//     blue: "#dgjedg"
+// } as Record<Colors, RGB | string>;
+
+// console.log(pallate.red.toUpperCase()); // 255,0,0
+// console.log(pallate.blue.length);
+
+
+// function add(a: number, b: number): number;
+// function add(a: string, b: string): string;
+
+// function add(a: unknown, b: any): any {
+//   return a + b;
+// }
+
+// console.log(add(1, 2)); // 3
+// console.log(add('1', 2)); // 3
+// console.log(add({ name: 'hello' }, 2)); // "Hello World"
+
+
+// const fun = (s: unknown) => {
+//     console.log(s.toString()); // Error: Object is of type 'unknown'.
+// }
+
+// fun('hello'); // hello
