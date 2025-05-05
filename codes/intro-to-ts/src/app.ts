@@ -113,3 +113,31 @@
 // }
 
 
+// type GenericArray<T> = Array<T>;
+
+// const myObjArray : GenericArray<{ name: string; age: number }> = [
+//     {
+//         name: 'Motahar',
+//         age: 22,
+//     },
+//     {
+//         name: "kuddus",
+//         age: 23
+//     }
+// ]
+
+
+// function identity<T>(arg : T) : T {
+//     return arg;
+// }
+
+// identity('string');
+
+// function getProperty<Type, Key extends keyof Type>(obj: Type, key: Key) {
+//     return obj[key];
+// }
+
+// let x = { a: 1, b: 2, c: 3, d: 4 };
+
+// getProperty(x, "a");
+// getProperty(x, "m");

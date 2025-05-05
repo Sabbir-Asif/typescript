@@ -5,3 +5,5 @@
 
 - call signature
 - construct signature
+- Generic Parameter Defaults
+- Variance Annotations
