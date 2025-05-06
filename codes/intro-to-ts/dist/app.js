@@ -167,8 +167,30 @@
 //   return a + b;
 // }
 // console.log(add(1, 2)); // 3
-// console.log(add('Hello', ' World')); // "Hello World"
-const fun = (s) => {
-    console.log(typeof s); // Error: Object is of type 'unknown'.
-};
-fun('hello'); // hello
+// console.log(add('1', 2)); // 3
+// console.log(add({ name: 'hello' }, 2)); // "Hello World"
+// const fun = (s: unknown) => {
+//     console.log(s.toString()); // Error: Object is of type 'unknown'.
+// }
+// fun('hello'); // hello
+// type GenericArray<T> = Array<T>;
+// const myObjArray : GenericArray<{ name: string; age: number }> = [
+//     {
+//         name: 'Motahar',
+//         age: 22,
+//     },
+//     {
+//         name: "kuddus",
+//         age: 23
+//     }
+// ]
+// function identity<T>(arg : T) : T {
+//     return arg;
+// }
+// identity('string');
+// function getProperty<Type, Key extends keyof Type>(obj: Type, key: Key) {
+//     return obj[key];
+// }
+// let x = { a: 1, b: 2, c: 3, d: 4 };
+// getProperty(x, "a");
+// getProperty(x, "m");
